@@ -1,0 +1,44 @@
+.navbar {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  position: left;
+  z-index: 99;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-family: "Marck Script", cursive;
+  font-size: 30px;
+}
+
+.workingspace {
+    text-align: left;
+  }
+
+.img-fluid {
+  border-radius: 20px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/bg2.jpeg);
+  background-size: cover;
+  height: 550px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 150px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+  margin-bottom: 30px;
+}

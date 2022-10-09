@@ -1,0 +1,146 @@
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: "Marck Script", cursive;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/bg2.jpeg);
+  background-size: cover;
+  height: 550px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  text-align: left;
+  color: white;
+  margin-top: 150px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* workingspace */
+.workingspace {
+  margin-top: 120px;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+.workingspace h3 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: inherit;
+  margin-top: 20px;
+}
+
+.workingspace h3 span {
+  font-weight: 500;
+}
+
+.workingspace p {
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+/* Gallery */
+.gallery {
+  margin-top: 90px;
+}
+
+.tombol {
+  border-radius: 10px;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.gallery h2 {
+  font-weight: bold;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+hr {
+  width: 250px;
+  border-top: 3px solid #999;
+}
+
+/* Utility */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+  text-align: left;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  .nav-link {
+    text-transform: inherit;
+    margin-right: 30px;
+    font-weight: bold;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 640px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 40px;
+  }
+
+  .workingspace {
+    text-align: left;
+  }
+
+  .testimonial h5 {
+    font-size: 32px;
+  }
+}
